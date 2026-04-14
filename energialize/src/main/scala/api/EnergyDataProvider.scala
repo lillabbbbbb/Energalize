@@ -1,4 +1,4 @@
-package reps.infrastructure.api
+package api
 
 import reps.domain.model.{AppError, EnergyReading}
 

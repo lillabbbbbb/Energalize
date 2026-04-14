@@ -1,4 +1,4 @@
-package reps.domain.model
+package model
 
 sealed trait EnergySource
 object EnergySource {

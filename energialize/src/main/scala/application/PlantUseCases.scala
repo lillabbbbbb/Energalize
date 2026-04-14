@@ -1,4 +1,4 @@
-package reps.application
+package application
 
 import reps.domain.model._
 

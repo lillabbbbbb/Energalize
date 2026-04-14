@@ -1,4 +1,4 @@
-package reps.domain.model
+package model
 
 final case class StatsSummary(
   mean: Double,

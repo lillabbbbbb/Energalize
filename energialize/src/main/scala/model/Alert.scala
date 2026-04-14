@@ -1,4 +1,4 @@
-package reps.domain.model
+package model
 
 import java.time.LocalDateTime
 
