@@ -1,6 +1,6 @@
 package application
 
-import reps.domain.model._
+import model._
 
 trait PlantUseCases {
   def loadAssets(path: String): Either[AppError, List[PlantAsset]]
