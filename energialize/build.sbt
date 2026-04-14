@@ -31,7 +31,8 @@ libraryDependencies ++= Seq(
  "org.scala-lang.modules" %% "scala-parser-combinators" % "2.3.0",
   "com.softwaremill.sttp.client3" %% "core" % "3.9.5",
   "com.softwaremill.sttp.client3" %% "cats" % "3.9.5",
-  "com.github.pureconfig" %% "pureconfig" % "0.17.6"
+  "com.github.pureconfig" %% "pureconfig" % "0.17.6",
+  "com.github.tototoshi" %% "scala-csv" % "1.3.10"
 )
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the scala-parser-combinators dependency to the set of dependencies
