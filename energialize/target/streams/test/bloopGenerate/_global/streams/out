@@ -1,4 +1,4 @@
 [debug] [energialize-test] Classpath dependencies List()
 [debug] [energialize-test] Dependencies from configurations List(energialize)
-[debug] Bloop wrote the configuration of project 'energialize-test' to '/Users/huba/Documents/GitHub/Energalize/energialize/.bloop/energialize-test.json'
-[success] Generated .bloop/energialize-test.json
+[debug] Bloop wrote the configuration of project 'energialize-test' to 'C:\Users\blill\OneDrive - LUT University\A Scala\Energalize\energialize\.bloop\energialize-test.json'
+[success] Generated .bloop\energialize-test.json

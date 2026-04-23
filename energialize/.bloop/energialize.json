@@ -2,43 +2,43 @@
     "version": "1.4.0",
     "project": {
         "name": "energialize",
-        "directory": "/Users/huba/Documents/GitHub/Energalize/energialize",
-        "workspaceDir": "/Users/huba/Documents/GitHub/Energalize/energialize",
+        "directory": "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize",
+        "workspaceDir": "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize",
         "sources": [
-            "/Users/huba/Documents/GitHub/Energalize/energialize/src/main/scala",
-            "/Users/huba/Documents/GitHub/Energalize/energialize/src/main/scala-2.13",
-            "/Users/huba/Documents/GitHub/Energalize/energialize/src/main/scala-2",
-            "/Users/huba/Documents/GitHub/Energalize/energialize/src/main/java",
-            "/Users/huba/Documents/GitHub/Energalize/energialize/target/scala-2.13/src_managed/main"
+            "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\src\\main\\scala",
+            "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\src\\main\\scala-2.13",
+            "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\src\\main\\scala-2",
+            "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\src\\main\\java",
+            "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\target\\scala-2.13\\src_managed\\main"
         ],
         "dependencies": [
             
         ],
         "classpath": [
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.13/scala-library-2.13.13.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/2.3.0/scala-parser-combinators_2.13-2.3.0.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/core_2.13/3.9.5/core_2.13-3.9.5.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/cats_2.13/3.9.5/cats_2.13-3.9.5.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig_2.13/0.17.6/pureconfig_2.13-0.17.6.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/tototoshi/scala-csv_2.13/1.3.10/scala-csv_2.13-1.3.10.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/model/core_2.13/1.7.9/core_2.13-1.7.9.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/core_2.13/1.3.16/core_2.13-1.3.16.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/ws_2.13/1.3.16/ws_2.13-1.3.16.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_2.13/3.5.1/cats-effect-kernel_2.13-3.5.1.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_2.13/3.5.1/cats-effect-std_2.13-3.5.1.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-core_2.13/0.17.6/pureconfig-core_2.13-0.17.6.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-generic_2.13/0.17.6/pureconfig-generic_2.13-0.17.6.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.9.0/cats-core_2.13-2.9.0.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-generic-base_2.13/0.17.6/pureconfig-generic-base_2.13-0.17.6.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.10/shapeless_2.13-2.3.10.jar",
-            "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.9.0/cats-kernel_2.13-2.9.0.jar"
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\2.3.0\\scala-parser-combinators_2.13-2.3.0.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\client3\\core_2.13\\3.9.5\\core_2.13-3.9.5.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\client3\\cats_2.13\\3.9.5\\cats_2.13-3.9.5.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig_2.13\\0.17.6\\pureconfig_2.13-0.17.6.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_2.13\\1.3.10\\scala-csv_2.13-1.3.10.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\model\\core_2.13\\1.7.9\\core_2.13-1.7.9.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\shared\\core_2.13\\1.3.16\\core_2.13-1.3.16.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\shared\\ws_2.13\\1.3.16\\ws_2.13-1.3.16.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-effect-kernel_2.13\\3.5.1\\cats-effect-kernel_2.13-3.5.1.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-effect-std_2.13\\3.5.1\\cats-effect-std_2.13-3.5.1.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-core_2.13\\0.17.6\\pureconfig-core_2.13-0.17.6.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-generic_2.13\\0.17.6\\pureconfig-generic_2.13-0.17.6.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-core_2.13\\2.9.0\\cats-core_2.13-2.9.0.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.3\\config-1.4.3.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-generic-base_2.13\\0.17.6\\pureconfig-generic-base_2.13-0.17.6.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.13\\2.3.10\\shapeless_2.13-2.3.10.jar",
+            "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_2.13\\2.9.0\\cats-kernel_2.13-2.9.0.jar"
         ],
-        "out": "/Users/huba/Documents/GitHub/Energalize/energialize/.bloop/energialize",
-        "classesDir": "/Users/huba/Documents/GitHub/Energalize/energialize/.bloop/energialize/scala-2.13/classes",
+        "out": "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\.bloop\\energialize",
+        "classesDir": "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\.bloop\\energialize\\scala-2.13\\classes",
         "resources": [
-            "/Users/huba/Documents/GitHub/Energalize/energialize/src/main/resources",
-            "/Users/huba/Documents/GitHub/Energalize/energialize/target/scala-2.13/resource_managed/main"
+            "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\src\\main\\resources",
+            "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\target\\scala-2.13\\resource_managed\\main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -48,12 +48,12 @@
                 
             ],
             "jars": [
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.13/scala-library-2.13.13.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.13/scala-compiler-2.13.13.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.13/scala-reflect-2.13.13.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.24.1/jline-3.24.1.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar"
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-compiler\\2.13.13\\scala-compiler-2.13.13.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.13\\scala-reflect-2.13.13.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\github\\java-diff-utils\\java-diff-utils\\4.12\\java-diff-utils-4.12.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jline\\jline\\3.24.1\\jline-3.24.1.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna\\5.13.0\\jna-5.13.0.jar"
             ],
             "setup": {
                 "order": "mixed",
@@ -64,7 +64,7 @@
                 "filterLibraryFromClasspath": false
             },
             "bridgeJars": [
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala2-sbt-bridge/2.13.13/scala2-sbt-bridge-2.13.13.jar"
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala2-sbt-bridge\\2.13.13\\scala2-sbt-bridge-2.13.13.jar"
             ]
         },
         "java": {
@@ -134,40 +134,40 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/Users/huba/Library/Caches/Coursier/arc/https/github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%252B8/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.18_8.tar.gz/jdk-17.0.18+8/Contents/Home",
+                "home": "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot",
                 "options": [
-                    "-Duser.dir=/Users/huba/Documents/GitHub/Energalize/energialize"
+                    "-Duser.dir=C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize"
                 ]
             },
             "mainClass": [
                 
             ],
             "runtimeConfig": {
-                "home": "/Users/huba/Library/Caches/Coursier/arc/https/github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%252B8/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.18_8.tar.gz/jdk-17.0.18+8/Contents/Home",
+                "home": "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot",
                 "options": [
-                    "-Duser.dir=/Users/huba/Documents/GitHub/Energalize/energialize"
+                    "-Duser.dir=C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize"
                 ]
             },
             "classpath": [
-                "/Users/huba/Documents/GitHub/Energalize/energialize/.bloop/energialize/scala-2.13/classes",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.13/scala-library-2.13.13.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/2.3.0/scala-parser-combinators_2.13-2.3.0.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/core_2.13/3.9.5/core_2.13-3.9.5.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/cats_2.13/3.9.5/cats_2.13-3.9.5.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig_2.13/0.17.6/pureconfig_2.13-0.17.6.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/tototoshi/scala-csv_2.13/1.3.10/scala-csv_2.13-1.3.10.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/model/core_2.13/1.7.9/core_2.13-1.7.9.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/core_2.13/1.3.16/core_2.13-1.3.16.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/ws_2.13/1.3.16/ws_2.13-1.3.16.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_2.13/3.5.1/cats-effect-kernel_2.13-3.5.1.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_2.13/3.5.1/cats-effect-std_2.13-3.5.1.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-core_2.13/0.17.6/pureconfig-core_2.13-0.17.6.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-generic_2.13/0.17.6/pureconfig-generic_2.13-0.17.6.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.9.0/cats-core_2.13-2.9.0.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-generic-base_2.13/0.17.6/pureconfig-generic-base_2.13-0.17.6.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.10/shapeless_2.13-2.3.10.jar",
-                "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.9.0/cats-kernel_2.13-2.9.0.jar"
+                "C:\\Users\\blill\\OneDrive - LUT University\\A Scala\\Energalize\\energialize\\.bloop\\energialize\\scala-2.13\\classes",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\2.3.0\\scala-parser-combinators_2.13-2.3.0.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\client3\\core_2.13\\3.9.5\\core_2.13-3.9.5.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\client3\\cats_2.13\\3.9.5\\cats_2.13-3.9.5.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig_2.13\\0.17.6\\pureconfig_2.13-0.17.6.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_2.13\\1.3.10\\scala-csv_2.13-1.3.10.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\model\\core_2.13\\1.7.9\\core_2.13-1.7.9.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\shared\\core_2.13\\1.3.16\\core_2.13-1.3.16.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\shared\\ws_2.13\\1.3.16\\ws_2.13-1.3.16.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-effect-kernel_2.13\\3.5.1\\cats-effect-kernel_2.13-3.5.1.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-effect-std_2.13\\3.5.1\\cats-effect-std_2.13-3.5.1.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-core_2.13\\0.17.6\\pureconfig-core_2.13-0.17.6.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-generic_2.13\\0.17.6\\pureconfig-generic_2.13-0.17.6.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-core_2.13\\2.9.0\\cats-core_2.13-2.9.0.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.3\\config-1.4.3.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-generic-base_2.13\\0.17.6\\pureconfig-generic-base_2.13-0.17.6.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.13\\2.3.10\\shapeless_2.13-2.3.10.jar",
+                "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_2.13\\2.9.0\\cats-kernel_2.13-2.9.0.jar"
             ]
         },
         "resolution": {
@@ -180,12 +180,12 @@
                     "artifacts": [
                         {
                             "name": "scala-library",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.13/scala-library-2.13.13.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar"
                         },
                         {
                             "name": "scala-library",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.13/scala-library-2.13.13-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13-sources.jar"
                         }
                     ]
                 },
@@ -197,12 +197,12 @@
                     "artifacts": [
                         {
                             "name": "scala-parser-combinators_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/2.3.0/scala-parser-combinators_2.13-2.3.0.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\2.3.0\\scala-parser-combinators_2.13-2.3.0.jar"
                         },
                         {
                             "name": "scala-parser-combinators_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/2.3.0/scala-parser-combinators_2.13-2.3.0-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\2.3.0\\scala-parser-combinators_2.13-2.3.0-sources.jar"
                         }
                     ]
                 },
@@ -214,12 +214,12 @@
                     "artifacts": [
                         {
                             "name": "core_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/core_2.13/3.9.5/core_2.13-3.9.5.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\client3\\core_2.13\\3.9.5\\core_2.13-3.9.5.jar"
                         },
                         {
                             "name": "core_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/core_2.13/3.9.5/core_2.13-3.9.5-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\client3\\core_2.13\\3.9.5\\core_2.13-3.9.5-sources.jar"
                         }
                     ]
                 },
@@ -231,12 +231,12 @@
                     "artifacts": [
                         {
                             "name": "cats_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/cats_2.13/3.9.5/cats_2.13-3.9.5.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\client3\\cats_2.13\\3.9.5\\cats_2.13-3.9.5.jar"
                         },
                         {
                             "name": "cats_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/cats_2.13/3.9.5/cats_2.13-3.9.5-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\client3\\cats_2.13\\3.9.5\\cats_2.13-3.9.5-sources.jar"
                         }
                     ]
                 },
@@ -248,12 +248,12 @@
                     "artifacts": [
                         {
                             "name": "pureconfig_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig_2.13/0.17.6/pureconfig_2.13-0.17.6.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig_2.13\\0.17.6\\pureconfig_2.13-0.17.6.jar"
                         },
                         {
                             "name": "pureconfig_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig_2.13/0.17.6/pureconfig_2.13-0.17.6-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig_2.13\\0.17.6\\pureconfig_2.13-0.17.6-sources.jar"
                         }
                     ]
                 },
@@ -265,12 +265,12 @@
                     "artifacts": [
                         {
                             "name": "scala-csv_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/tototoshi/scala-csv_2.13/1.3.10/scala-csv_2.13-1.3.10.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_2.13\\1.3.10\\scala-csv_2.13-1.3.10.jar"
                         },
                         {
                             "name": "scala-csv_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/tototoshi/scala-csv_2.13/1.3.10/scala-csv_2.13-1.3.10-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\tototoshi\\scala-csv_2.13\\1.3.10\\scala-csv_2.13-1.3.10-sources.jar"
                         }
                     ]
                 },
@@ -282,12 +282,12 @@
                     "artifacts": [
                         {
                             "name": "core_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/model/core_2.13/1.7.9/core_2.13-1.7.9.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\model\\core_2.13\\1.7.9\\core_2.13-1.7.9.jar"
                         },
                         {
                             "name": "core_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/model/core_2.13/1.7.9/core_2.13-1.7.9-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\model\\core_2.13\\1.7.9\\core_2.13-1.7.9-sources.jar"
                         }
                     ]
                 },
@@ -299,12 +299,12 @@
                     "artifacts": [
                         {
                             "name": "core_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/core_2.13/1.3.16/core_2.13-1.3.16.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\shared\\core_2.13\\1.3.16\\core_2.13-1.3.16.jar"
                         },
                         {
                             "name": "core_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/core_2.13/1.3.16/core_2.13-1.3.16-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\shared\\core_2.13\\1.3.16\\core_2.13-1.3.16-sources.jar"
                         }
                     ]
                 },
@@ -316,12 +316,12 @@
                     "artifacts": [
                         {
                             "name": "ws_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/ws_2.13/1.3.16/ws_2.13-1.3.16.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\shared\\ws_2.13\\1.3.16\\ws_2.13-1.3.16.jar"
                         },
                         {
                             "name": "ws_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/ws_2.13/1.3.16/ws_2.13-1.3.16-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\sttp\\shared\\ws_2.13\\1.3.16\\ws_2.13-1.3.16-sources.jar"
                         }
                     ]
                 },
@@ -333,12 +333,12 @@
                     "artifacts": [
                         {
                             "name": "cats-effect-kernel_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_2.13/3.5.1/cats-effect-kernel_2.13-3.5.1.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-effect-kernel_2.13\\3.5.1\\cats-effect-kernel_2.13-3.5.1.jar"
                         },
                         {
                             "name": "cats-effect-kernel_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_2.13/3.5.1/cats-effect-kernel_2.13-3.5.1-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-effect-kernel_2.13\\3.5.1\\cats-effect-kernel_2.13-3.5.1-sources.jar"
                         }
                     ]
                 },
@@ -350,12 +350,12 @@
                     "artifacts": [
                         {
                             "name": "cats-effect-std_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_2.13/3.5.1/cats-effect-std_2.13-3.5.1.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-effect-std_2.13\\3.5.1\\cats-effect-std_2.13-3.5.1.jar"
                         },
                         {
                             "name": "cats-effect-std_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_2.13/3.5.1/cats-effect-std_2.13-3.5.1-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-effect-std_2.13\\3.5.1\\cats-effect-std_2.13-3.5.1-sources.jar"
                         }
                     ]
                 },
@@ -367,12 +367,12 @@
                     "artifacts": [
                         {
                             "name": "pureconfig-core_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-core_2.13/0.17.6/pureconfig-core_2.13-0.17.6.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-core_2.13\\0.17.6\\pureconfig-core_2.13-0.17.6.jar"
                         },
                         {
                             "name": "pureconfig-core_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-core_2.13/0.17.6/pureconfig-core_2.13-0.17.6-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-core_2.13\\0.17.6\\pureconfig-core_2.13-0.17.6-sources.jar"
                         }
                     ]
                 },
@@ -384,12 +384,12 @@
                     "artifacts": [
                         {
                             "name": "pureconfig-generic_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-generic_2.13/0.17.6/pureconfig-generic_2.13-0.17.6.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-generic_2.13\\0.17.6\\pureconfig-generic_2.13-0.17.6.jar"
                         },
                         {
                             "name": "pureconfig-generic_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-generic_2.13/0.17.6/pureconfig-generic_2.13-0.17.6-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-generic_2.13\\0.17.6\\pureconfig-generic_2.13-0.17.6-sources.jar"
                         }
                     ]
                 },
@@ -401,12 +401,12 @@
                     "artifacts": [
                         {
                             "name": "cats-core_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.9.0/cats-core_2.13-2.9.0.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-core_2.13\\2.9.0\\cats-core_2.13-2.9.0.jar"
                         },
                         {
                             "name": "cats-core_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.9.0/cats-core_2.13-2.9.0-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-core_2.13\\2.9.0\\cats-core_2.13-2.9.0-sources.jar"
                         }
                     ]
                 },
@@ -418,12 +418,12 @@
                     "artifacts": [
                         {
                             "name": "config",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.3\\config-1.4.3.jar"
                         },
                         {
                             "name": "config",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.3\\config-1.4.3-sources.jar"
                         }
                     ]
                 },
@@ -435,12 +435,12 @@
                     "artifacts": [
                         {
                             "name": "pureconfig-generic-base_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-generic-base_2.13/0.17.6/pureconfig-generic-base_2.13-0.17.6.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-generic-base_2.13\\0.17.6\\pureconfig-generic-base_2.13-0.17.6.jar"
                         },
                         {
                             "name": "pureconfig-generic-base_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-generic-base_2.13/0.17.6/pureconfig-generic-base_2.13-0.17.6-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\pureconfig\\pureconfig-generic-base_2.13\\0.17.6\\pureconfig-generic-base_2.13-0.17.6-sources.jar"
                         }
                     ]
                 },
@@ -452,12 +452,12 @@
                     "artifacts": [
                         {
                             "name": "shapeless_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.10/shapeless_2.13-2.3.10.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.13\\2.3.10\\shapeless_2.13-2.3.10.jar"
                         },
                         {
                             "name": "shapeless_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.10/shapeless_2.13-2.3.10-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.13\\2.3.10\\shapeless_2.13-2.3.10-sources.jar"
                         }
                     ]
                 },
@@ -469,12 +469,12 @@
                     "artifacts": [
                         {
                             "name": "cats-kernel_2.13",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.9.0/cats-kernel_2.13-2.9.0.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_2.13\\2.9.0\\cats-kernel_2.13-2.9.0.jar"
                         },
                         {
                             "name": "cats-kernel_2.13",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.9.0/cats-kernel_2.13-2.9.0-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_2.13\\2.9.0\\cats-kernel_2.13-2.9.0-sources.jar"
                         }
                     ]
                 },
@@ -486,12 +486,12 @@
                     "artifacts": [
                         {
                             "name": "scala-library",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.13/scala-library-2.13.13.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar"
                         },
                         {
                             "name": "scala-library",
                             "classifier": "sources",
-                            "path": "/Users/huba/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.13/scala-library-2.13.13-sources.jar"
+                            "path": "C:\\Users\\blill\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13-sources.jar"
                         }
                     ]
                 }
