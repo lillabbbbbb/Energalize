@@ -5,5 +5,7 @@ final case class PlantAsset(
   name: String,
   source: EnergySource,
   location: String,
-  ratedCapacityKw: Double
+  ratedCapacityKw: Double,
+  isEnabled: Boolean,
+  outputFactor: Double
 )
