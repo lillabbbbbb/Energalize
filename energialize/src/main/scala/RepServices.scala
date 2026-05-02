@@ -1,3 +1,6 @@
+// PlantServices: CSV-backed implementations of PlantUseCases.
+// Provides loading of assets/readings and basic analytics (overview, filtering, stats, alerts).
+
 import java.io.File
 import java.time.LocalDateTime
 import java.time.temporal.WeekFields
@@ -8,7 +11,9 @@ import com.github.tototoshi.csv._
 import application.PlantUseCases
 import model._
 
+// CSV-backed service implementing PlantUseCases
 object PlantServices extends PlantUseCases {
+  // Load assets from CSV path and parse into PlantAsset
   override def loadAssets(path: String): Either[AppError, List[PlantAsset]] = {
     val result = Try {
       val reader = CSVReader.open(new File(path))
@@ -33,6 +38,7 @@ object PlantServices extends PlantUseCases {
     result.toEither.left.map(_ => FileReadError(path))
   }
 
+  // Load readings from CSV and parse into EnergyReading
   override def loadReadings(path: String): Either[AppError, List[EnergyReading]] = {
     val result = Try {
       val reader = CSVReader.open(new File(path))
@@ -55,12 +61,14 @@ object PlantServices extends PlantUseCases {
     result.toEither.left.map(_ => FileReadError(path))
   }
 
+  // Simple one-line overview used by the CLI
   override def overview(assets: List[PlantAsset], readings: List[EnergyReading]): String = {
     val totalEnergy = readings.filterNot(RepLogic.isDemandReading).map(_.energyKwh).sum
     val totalStorage = readings.flatMap(_.storageCapacityKwh).sum
     s"Assets: ${assets.size} | Total Energy (kWh): ${RepFormatting.formatDouble(totalEnergy)} | Storage (kWh): ${RepFormatting.formatDouble(totalStorage)}"
   }
 
+  // Filter readings by granularity (hour/day/week/month) using parsed date input
   override def filterByPeriod(
     readings: List[EnergyReading],
     granularity: TimeGranularity,
@@ -89,6 +97,7 @@ object PlantServices extends PlantUseCases {
     }
   }
 
+  // Compute basic statistics (mean, median, mode, range, midrange, min, max, count)
   override def stats(readings: List[EnergyReading]): Either[AppError, StatsSummary] = {
     val values = readings.map(_.energyKwh)
     if (values.isEmpty) {
@@ -115,6 +124,7 @@ object PlantServices extends PlantUseCases {
     }
   }
 
+  // Generate alerts from readings and asset thresholds/health status
   override def alerts(
     assets: List[PlantAsset],
     readings: List[EnergyReading]

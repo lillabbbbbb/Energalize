@@ -1,5 +1,7 @@
 import model.{Alert, EnergyReading, EnergySource, HealthStatus, PlantAsset, StatsSummary}
 
+// Formatting utilities for formatted printing to the console
+
 object RepFormatting {
   def formatDouble(value: Double): String = f"$value%.2f"
 

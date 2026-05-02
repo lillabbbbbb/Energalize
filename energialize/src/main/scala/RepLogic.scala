@@ -6,12 +6,14 @@ import model.{Alert, EnergyReading, HealthStatus, PlantAsset}
 object RepLogic {
   def isDemandReading(reading: EnergyReading): Boolean = reading.assetId == RepConstants.DemandAssetId
 
+  // Helper to convert the time data and capacity to a kwh reading
   def consumptionToKwh(valueMw: Double, start: LocalDateTime, end: LocalDateTime): Double = {
     val minutes = Duration.between(start, end).toMinutes
     val hours = math.max(0.0, minutes.toDouble / 60.0)
     valueMw * 1000.0 * hours
   }
 
+  // Get the generated amount of energy
   def generateForDemand(assets: List[PlantAsset], demand: EnergyReading): List[EnergyReading] = {
     val availableAssets = assets.filter(_.isEnabled)
     val totalCapacity = availableAssets.map(asset => asset.ratedCapacityKw * asset.outputFactor).sum
@@ -33,6 +35,7 @@ object RepLogic {
     }
   }
 
+  // Function to create random errors with 25% chance
   def generateRandomAlerts(assets: List[PlantAsset]): List[Alert] = {
     if (assets.isEmpty) {
       List.empty

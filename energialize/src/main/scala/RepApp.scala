@@ -1,3 +1,5 @@
+// CLI app: menus and interactive operations for plant management
+
 import java.io.File
 import scala.annotation.tailrec
 import scala.io.StdIn.readLine
@@ -10,6 +12,7 @@ import api.EnergyDataProvider
 import functions.DataAnalysis
 import model.{Alert, AppState, EnergyReading, PlantAsset}
 
+// Holds dependencies used across the interactive CLI
 final case class AppContext(
   plantUseCases: PlantUseCases,
   dataProvider: EnergyDataProvider
@@ -17,9 +20,11 @@ final case class AppContext(
 
 object RepApp {
   def run(apiKey: String): Unit = {
+    // Set up initial context
     val plantUseCases = PlantServices
     val dataProvider = FingridEnergyDataProvider(apiKey)
     val context = AppContext(plantUseCases, dataProvider)
+    // Load in previously saved state if exist
     val initialState = RepIO.loadSystemState(RepConstants.DefaultAssets, plantUseCases)
     mainMenu(context, initialState)
   }
@@ -214,6 +219,7 @@ Enter your choice:  """.stripMargin)
   private def issuesMenu(context: AppContext, state: AppState): AppState = {
     println("|--- PLANT STATUS ---\n")
     val generatedAlerts = context.plantUseCases.alerts(state.assets, state.readings)
+    // also include some randomly generated alerts
     val randomAlerts = RepLogic.generateRandomAlerts(state.assets)
     val mergedAlerts = (state.alerts ++ generatedAlerts ++ randomAlerts).distinct
 
@@ -221,12 +227,14 @@ Enter your choice:  """.stripMargin)
     state.copy(alerts = updatedAlerts)
   }
 
+  // Print overview and list all assets
   private def viewAllResources(context: AppContext, state: AppState): Unit = {
     println("|--- ALL RESOURCES ---\n")
     println(context.plantUseCases.overview(state.assets, state.readings))
     state.assets.foreach(asset => println(RepFormatting.formatAsset(asset)))
   }
 
+  // Show solar assets and optionally adjust one
   private def viewSolar(state: AppState): AppState = {
     println("|--- SOLAR ---\n")
     val solarAssets = state.assets.filter(_.source == model.EnergySource.Solar)
@@ -240,6 +248,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Show wind assets and allow toggling
   private def viewWind(state: AppState): AppState = {
     println("|--- WIND ---\n")
     val windAssets = state.assets.filter(_.source == model.EnergySource.Wind)
@@ -253,6 +262,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Show hydro assets and allow toggling
   private def viewHydro(state: AppState): AppState = {
     println("|--- HYDRO ---\n")
     val hydroAssets = state.assets.filter(_.source == model.EnergySource.Hydro)
@@ -266,6 +276,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Prompt and toggle an asset state
   private def startStopSource(state: AppState): AppState = {
     println("|--- START / STOP ---\n")
     println("Enter asset id to toggle: ")
@@ -273,6 +284,7 @@ Enter your choice:  """.stripMargin)
     toggleGenerator(state, assetId)
   }
 
+  // Prompt and adjust an asset's output factor
   private def adjustOutput(state: AppState): AppState = {
     println("|--- ADJUST OUTPUT ---\n")
     println("Enter asset id to adjust: ")
@@ -280,6 +292,7 @@ Enter your choice:  """.stripMargin)
     adjustOutputForAsset(state, assetId)
   }
 
+  // Fetch live demand readings and synthesize generation readings
   private def collectLiveData(context: AppContext, state: AppState): AppState = {
     println("|--- COLLECT LIVE DATA ---\n")
     context.dataProvider.fetchReadings() match {
@@ -296,6 +309,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Save current readings to a CSV at user-specified path
   private def storeToFile(state: AppState): Unit = {
     println("|--- SAVE DATA ---\n")
     println("Enter CSV path to write: ")
@@ -332,6 +346,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Load readings from CSV via PlantUseCases
   private def loadFromFile(context: AppContext, state: AppState): AppState = {
     println("|--- LOAD DATA ---\n")
     println("Enter CSV path to read: ")
@@ -346,12 +361,14 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Print total generated energy excluding demand
   private def viewTotalGeneration(state: AppState): Unit = {
     println("|--- TOTAL GENERATED ENERGY ---\n")
     val total = state.readings.filterNot(RepLogic.isDemandReading).map(_.energyKwh).sum
     println(s"Total energy generated: ${RepFormatting.formatDouble(total)} kWh")
   }
 
+  // Print generation totals grouped by source
   private def viewEnergyBySource(state: AppState): Unit = {
     println("|--- ENERGY BY SOURCE ---\n")
     val grouped = state.readings
@@ -367,12 +384,14 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Print total storage capacity across readings
   private def viewCapacity(state: AppState): Unit = {
     println("|--- ENERGY CAPACITY ---\n")
     val capacity = state.readings.flatMap(_.storageCapacityKwh).sum
     println(s"Total storage capacity: ${RepFormatting.formatDouble(capacity)} kWh")
   }
 
+  // Display recent generation and demand readings
   private def displayGenerationData(state: AppState): Unit = {
     println("|--- GENERATION DATA ---\n")
     val generationReadings = state.readings.filterNot(RepLogic.isDemandReading).sortBy(_.timestamp).takeRight(10)
@@ -391,6 +410,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Filter readings by granularity and date using DataAnalysis helpers
   private def filterMenu(state: AppState): Unit = {
     println("|--- FILTER ---\n")
     println("Choose granularity: 1) Hourly 2) Daily 3) Weekly 4) Monthly")
@@ -404,7 +424,16 @@ Enter your choice:  """.stripMargin)
     granularity match {
       case None => println("Invalid granularity.")
       case Some(gran) =>
-        println("Enter date (DD/MM/YYYY): ")
+        gran match {
+          case model.TimeGranularity.Hourly =>
+            println("Enter date/time (DD/MM/YYYY HH or DD/MM/YYYY HH:mm), e.g., 01/01/2026 13 or 01/01/2026 13:30")
+          case model.TimeGranularity.Daily =>
+            println("Enter date (DD/MM/YYYY), e.g., 01/01/2026")
+          case model.TimeGranularity.Weekly =>
+            println("Enter date (DD/MM/YYYY) within the week, e.g., 01/01/2026")
+          case model.TimeGranularity.Monthly =>
+            println("Enter month (YYYY-MM or MM/YYYY), e.g., 2026-01 or 01/2026")
+        }
         val dateInput = readLine()
         println("Sort order: 1) Ascending 2) Descending")
         val ascending = readLine() match {
@@ -424,6 +453,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Search helper menu by asset id, source or time windows
   private def searchMenu(state: AppState): Unit = {
     println("|--- SEARCH ---\n")
     println("Search by: 1) Asset Id 2) Source 3) Hourly 4) Daily 5) Weekly 6) Monthly")
@@ -470,6 +500,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Compute and display basic statistics via use cases
   private def statAnalysis(context: AppContext, state: AppState): Unit = {
     println("|--- STATISTICS ---\n")
     context.plantUseCases.stats(state.readings) match {
@@ -487,6 +518,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Toggle asset enabled state and return updated AppState
   private def toggleGenerator(state: AppState, assetId: String): AppState = {
     val updated = state.assets.map { asset =>
       if (asset.id == assetId) asset.copy(isEnabled = !asset.isEnabled) else asset
@@ -501,6 +533,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Adjust an asset's output factor by percentage
   private def adjustOutputForAsset(state: AppState, assetId: String): AppState = {
     state.assets.find(_.id == assetId) match {
       case None =>
@@ -524,6 +557,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Compare generation vs consumption and show stats for each
   private def generationConsumptionAnalytics(context: AppContext, state: AppState): Unit = {
     println("|--- GENERATION VS CONSUMPTION ---\n")
     val demandReadings = state.readings.filter(RepLogic.isDemandReading)
@@ -545,6 +579,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Save generator metadata to CSV
   private def storeGeneratorsToFile(state: AppState): Unit = {
     println("|--- SAVE GENERATORS ---\n")
     println("Enter CSV path to write: ")
@@ -557,6 +592,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Load generator metadata from CSV
   private def loadGeneratorsFromFile(context: AppContext, state: AppState): AppState = {
     println("|--- LOAD GENERATORS ---\n")
     println("Enter CSV path to read: ")
@@ -571,6 +607,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Prompt user and add a new PlantAsset to state
   private def addGenerator(state: AppState): AppState = {
     println("|--- ADD POWER GENERATOR ---\n")
     println("Enter generator id: ")
@@ -599,6 +636,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Loop menu to dismiss alerts one by one
   @tailrec
   private def dismissAlertsLoop(alerts: List[Alert]): List[Alert] = {
     if (alerts.isEmpty) {
@@ -626,6 +664,7 @@ Enter your choice:  """.stripMargin)
     }
   }
 
+  // Persist state and exit
   private def exitProgram(state: AppState): AppState = {
     RepIO.saveSystemState(state)
     println("Exiting system...")

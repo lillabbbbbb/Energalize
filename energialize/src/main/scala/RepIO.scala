@@ -8,6 +8,7 @@ import application.PlantUseCases
 import model.{Alert, AppState, EnergyReading, PlantAsset}
 
 object RepIO {
+  // Load system state from CSV files if present, otherwise use defaults
   def loadSystemState(defaultAssets: List[PlantAsset], plantUseCases: PlantUseCases): AppState = {
     val assets = loadAssetsIfExists(RepConstants.GeneratorsStatePath, plantUseCases).getOrElse(defaultAssets)
     val readings = loadReadingsIfExists(RepConstants.ReadingsStatePath, plantUseCases).getOrElse(List.empty)
@@ -15,6 +16,7 @@ object RepIO {
     AppState(assets = assets, readings = readings, alerts = alerts)
   }
 
+  // Persist all parts of application state to configured CSV paths
   def saveSystemState(state: AppState): Unit = {
     saveGeneratorsState(state.assets, RepConstants.GeneratorsStatePath)
     saveReadingsState(state.readings, RepConstants.ReadingsStatePath)
@@ -22,6 +24,7 @@ object RepIO {
     println("System state saved.")
   }
 
+  // Save generator data to CSV
   def saveGeneratorsState(assets: List[PlantAsset], path: String): Unit = {
     val writer = CSVWriter.open(new File(path))
     val headers = List("id", "name", "source", "location", "ratedCapacityKw", "isEnabled", "outputFactor")
@@ -42,6 +45,7 @@ object RepIO {
     writer.close()
   }
 
+  // Save readings list to CSV
   def saveReadingsState(readings: List[EnergyReading], path: String): Unit = {
     val writer = CSVWriter.open(new File(path))
     val headers = List(
@@ -70,6 +74,7 @@ object RepIO {
     writer.close()
   }
 
+  // Save alerts list to CSV
   def saveAlertsState(alerts: List[Alert], path: String): Unit = {
     val writer = CSVWriter.open(new File(path))
     val headers = List("assetId", "timestamp", "severity", "message")
@@ -87,6 +92,7 @@ object RepIO {
     writer.close()
   }
 
+  // Load assets via PlantUseCases if file exists
   private def loadAssetsIfExists(path: String, plantUseCases: PlantUseCases): Option[List[PlantAsset]] = {
     if (!new File(path).exists()) {
       None
@@ -95,6 +101,7 @@ object RepIO {
     }
   }
 
+  // Load readings via PlantUseCases if file exists
   private def loadReadingsIfExists(path: String, plantUseCases: PlantUseCases): Option[List[EnergyReading]] = {
     if (!new File(path).exists()) {
       None
@@ -103,6 +110,7 @@ object RepIO {
     }
   }
 
+  // Load alerts CSV if file exists (parsed manually)
   private def loadAlertsIfExists(path: String): Option[List[Alert]] = {
     if (!new File(path).exists()) {
       None

@@ -4,6 +4,8 @@ import scala.util.Try
 
 import model.{AppError, EnergySource, HealthStatus, InvalidDateFormat}
 
+// Helpers for parsing data in from the CSV files
+
 object RepParsing {
   def parseDate(input: String): Either[AppError, LocalDate] = {
     Try(LocalDate.parse(input, RepConstants.DateFormatter)).toEither.left.map(_ => InvalidDateFormat(input))

@@ -2,6 +2,8 @@ import java.time.format.DateTimeFormatter
 
 import model.{EnergySource, PlantAsset}
 
+// Default values for file saving and default assets
+
 object RepConstants {
   val DemandAssetId = "DEMAND"
 
